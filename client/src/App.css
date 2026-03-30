@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
+
+.form button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  transform: scale(1.05);
+  background: #2563eb;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.label {
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+.deleteBtn {
+  background: #ef4444;
+  margin-left: 10px;
+}
+
+.deleteBtn:hover {
+  background: #dc2626;
+}
