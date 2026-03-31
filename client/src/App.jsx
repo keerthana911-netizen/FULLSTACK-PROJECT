@@ -38,15 +38,16 @@ function App() {
     setEmail("");
     fetchUsers();
   };
-
-  // Delete user
+ //delete user
   const deleteUser = async (id) => {
-    await fetch("https://fullstack-project-sfam.onrender.com/add-user-manual", {
-      method: "DELETE",
-    });
+  console.log("Deleting user:", id);
 
-    fetchUsers();
-  };
+  await fetch(`https://fullstack-project-sfam.onrender.com/delete-user/${id}`, {
+    method: "DELETE",
+  });
+
+  fetchUsers();
+};
 
   // Update user
   const updateUser = async () => {

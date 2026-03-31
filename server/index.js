@@ -9,7 +9,10 @@ import User from "./models/User.js";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+}));
 app.use(express.json());
 
 console.log("Starting server...");
