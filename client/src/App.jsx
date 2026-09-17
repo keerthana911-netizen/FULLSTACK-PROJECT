@@ -53,7 +53,7 @@ function App() {
   const updateUser = async () => {
     if (!editUser) return;
 
-    await fetch(`https://fullstack-project-1-backend.onrender.com/${editUser._id}`, {
+    await fetch(`https://fullstack-project-1-backend.onrender.com/update/${editUser._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
