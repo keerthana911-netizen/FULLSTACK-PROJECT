@@ -10,7 +10,7 @@ function App() {
 
   // Fetch users
   const fetchUsers = async () => {
-    const res = await fetch("https://fullstack-project-sfam.onrender.com/users");
+    const res = await fetch("https://fullstack-project-1-backend.onrender.com/users");
     const data = await res.json();
     setUsers(data);
   };
@@ -26,7 +26,7 @@ function App() {
       return;
     }
 
-    await fetch("https://fullstack-project-sfam.onrender.com/add-user-manual", {
+    await fetch("https://fullstack-project-1-backend.onrender.com/add-user-manual", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ function App() {
   const deleteUser = async (id) => {
   console.log("Deleting user:", id);
 
-  await fetch(`https://fullstack-project-sfam.onrender.com/delete-user/${id}`, {
+  await fetch(`https://fullstack-project-1-backend.onrender.com/delete-user/${id}`, {
     method: "DELETE",
   });
 
@@ -53,7 +53,7 @@ function App() {
   const updateUser = async () => {
     if (!editUser) return;
 
-    await fetch(`https://fullstack-project-sfam.onrender.com/update/${editUser._id}`, {
+    await fetch(`https://fullstack-project-1-backend.onrender.com/${editUser._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
