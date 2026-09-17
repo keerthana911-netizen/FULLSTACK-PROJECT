@@ -1,14 +1,14 @@
 # 🌍 Full Stack User Management App
 
 ## 🚀 Live Demo
-Frontend: [[https://your-frontend-link.onrender.com ](https://fullstack-project-1-76yw.onrender.com) ](https://fullstack-project-1-76yw.onrender.com)
-Backend: [https://fullstack-project-sfam.onrender.com ](https://fullstack-project-sfam.onrender.com)
----
+Frontend: [fullstack-project-1-76yw.onrender.com](https://fullstack-project-1-76yw.onrender.com)
+Backend: [fullstack-project-1-backend.onrender.com](https://fullstack-project-1-backend.onrender.com)
+
+⚠️ *Free Render tier — first load may take 30–50s if the server has been idle.*
 
 ## 📌 Project Description
 This is a full-stack web application that allows users to manage user data with complete CRUD functionality. The application is built using React for the frontend, Node.js and Express for the backend, and MongoDB as the database.
 
----
 
 ## ✨ Features
 - ➕ Add Users  
@@ -17,15 +17,12 @@ This is a full-stack web application that allows users to manage user data with 
 - ❌ Delete Users  
 - 🔍 Search Users  
 
----
-
 ## 🛠️ Tech Stack
 - Frontend: React (Vite)
 - Backend: Node.js, Express.js
 - Database: MongoDB (Atlas)
 - Deployment: Render
 
----
 
 ## 📂 Project Structure
 
@@ -34,8 +31,6 @@ FULLSTACK-PROJECT
 ├── client # React frontend
 ├── server # Node.js backend
 
-
----
 
 ## ⚙️ Setup Instructions (Local)
 
@@ -73,14 +68,11 @@ cd client
 npm run dev
 
 
----
-
 ## 🌐 Deployment
 - Frontend deployed on Render (Static Site)
 - Backend deployed on Render (Web Service)
 - Database hosted on MongoDB Atlas
 
----
 
 ## 🎯 Learning Outcomes
 - Built a full-stack application from scratch  
@@ -88,10 +80,15 @@ npm run dev
 - Connected frontend with backend  
 - Deployed a live production app  
 
+
+## ⚠️ Known Limitations
+- CORS is open to all origins and endpoints (including delete/update) have no authentication — anyone with the API URL can modify data. A production version would add auth and restrict CORS.
+- Backend has no rate limiting.
+
 ---
 
 
 ---
 
 ## 👨‍💻 Author
-Its me! I'm the one
+Its me! obviously I'm the one
